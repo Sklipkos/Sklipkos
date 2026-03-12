@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+
+<meta charset="UTF-8">
+<title>Sklípkoš</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="brand">
+
+<img src="img/logo.png" class="logo">
+
+<div class="brandText">
+
+<h1>Sklípkoš</h1>
+<p>Pro skutečné chovatele</p>
+
+</div>
+
+</div>
+
+</header>
+
+
+
+<section class="offer">
+
+<h2>Aktuální nabídka 🕷️</h2>
+
+<div id="spiderList"></div>
+
+</section>
+
+
+
+<section class="species">
+
+<h2>Druhy které chováme</h2>
+
+<div class="speciesGrid">
+
+<div>Poecilotheria</div>
+<div>Brachypelma</div>
+<div>Cyriopagopus</div>
+<div>Psalmopoeus</div>
+<div>Lasiodora</div>
+<div>Harpactira</div>
+<div>Pterinochilus</div>
+
+</div>
+
+</section>
+
+
+
+<section class="contact">
+
+<h2>Kontakt</h2>
+
+<p>📩 email@email.cz</p>
+
+<p>📱 Facebook / Messenger</p>
+
+<p>📞 +420 xxx xxx xxx</p>
+
+</section>
+
+
+<footer>
+
+<p>Sklípkoš 🕷️</p>
+
+</footer>
+
+<script>
+
+container.innerHTML += `
+
+<div class="spider">
+
+<img src="${spider.image}" class="thumb">
+
+<div>
+
+<a href="${spider.link}">
+${spider.name}
+</a>
+
+<div class="info">
+${spider.size}
+</div>
+
+</div>
+
+<div class="price">
+${spider.price}
+</div>
+
+</div>
+
+`
+</script>
+
+<script src="spiders.js"></script>
+
+</body>
+</html>
