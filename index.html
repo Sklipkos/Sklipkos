@@ -2,114 +2,77 @@
 <html lang="cs">
 
 <head>
-
 <meta charset="UTF-8">
 <title>Sklípkoš</title>
-
 <link rel="stylesheet" href="style.css">
 <link rel="icon" href="img/sklipkos-favicon.ico" type="image/x-icon">
+
+<style>
+/* Záhlaví přes celou šířku bez textu */
+header {
+  width: 100%;
+  background: url('img/sklipkos-zahlavi.png') no-repeat center center;
+  background-size: cover;       /* obrázek vyplní celou šířku */
+  height: 375px;                /* výška záhlaví = 35% šířky obrazovky */
+  max-height: 400px;            /* nepřekročí 400px na desktopu */
+  min-height: 200px;            /* alespoň 200px na malých obrazovkách */
+}
+
+/* Pokud chceš, aby se celý obrázek vždy vešel, i když se okraje ořežou, můžeš zkusit místo cover: */
+/*
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+*/
+</style>
 
 </head>
 
 <body>
 
-<header>
-
-<div class="brand">
-
-<img src="img/logo.png" class="logo">
-
-<div class="brandText">
-
-<h1>Sklípkoš</h1>
-<p>Pro skutečné chovatele</p>
-
-</div>
-
-</div>
-
-</header>
-
-
+<header></header>
 
 <section class="offer">
-
-<h2>Aktuální nabídka 🕷️</h2>
-
-<div id="spiderList"></div>
-
+  <h2>Aktuální nabídka 🕷️</h2>
+  <div id="spiderList"></div>
 </section>
-
-
 
 <section class="species">
-
-<h2>Druhy které chováme</h2>
-
-<div class="speciesGrid">
-
-<div>Poecilotheria</div>
-<div>Brachypelma</div>
-<div>Cyriopagopus</div>
-<div>Psalmopoeus</div>
-<div>Lasiodora</div>
-<div>Harpactira</div>
-<div>Pterinochilus</div>
-
-</div>
-
+  <h2>Druhy které chováme</h2>
+  <div class="speciesGrid">
+    <div>Poecilotheria</div>
+    <div>Brachypelma</div>
+    <div>Cyriopagopus</div>
+    <div>Psalmopoeus</div>
+    <div>Lasiodora</div>
+    <div>Harpactira</div>
+    <div>Pterinochilus</div>
+  </div>
 </section>
-
-
 
 <section class="contact">
-
-<h2>Kontakt</h2>
-
-<p>📩 email@email.cz</p>
-
-<p>📱 Facebook / Messenger</p>
-
-<p>📞 +420 xxx xxx xxx</p>
-
+  <h2>Kontakt</h2>
+  <p>📩 email@email.cz</p>
+  <p>📱 Facebook / Messenger</p>
+  <p>📞 +420 xxx xxx xxx</p>
 </section>
 
-
 <footer>
-
-<p>Sklípkoš 🕷️</p>
-
+  <p>Sklípkoš 🕷️</p>
 </footer>
 
 <script>
-
 container.innerHTML += `
-
 <div class="spider">
-
-<img src="${spider.image}" class="thumb">
-
-<div>
-
-<a href="${spider.link}">
-${spider.name}
-</a>
-
-<div class="info">
-${spider.size}
+  <img src="${spider.image}" class="thumb">
+  <div>
+    <a href="${spider.link}">${spider.name}</a>
+    <div class="info">${spider.size}</div>
+  </div>
+  <div class="price">${spider.price}</div>
 </div>
-
-</div>
-
-<div class="price">
-${spider.price}
-</div>
-
-</div>
-
 `
 </script>
-
 <script src="spiders.js"></script>
 
 </body>

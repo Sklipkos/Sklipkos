@@ -321,17 +321,35 @@ margin-top:40px;
 }
 
 .speciesPhoto{
-
 width:320px;
 border-radius:12px;
-margin-top: 45px;
-
+margin-top:0;
 }
 
 .speciesInfo{
 
-max-width:500px;
 
+
+background:#151518;
+
+padding:25px;
+
+border-radius:14px;
+
+box-shadow:0 8px 20px rgba(0,0,0,0.4);
+
+height:fit-content;
+
+font-size:16px;
+line-height:1.7;
+
+
+}
+
+.speciesInfo h2{
+color:#9ec5ff;
+margin-top:0;
+margin-bottom:15px;
 }
 
 .speciesPhoto{
@@ -370,3 +388,166 @@ line-height:1.6;
     text-align: left !important;  /* zarovná text a nadpis vlevo */
     margin-left: 0 !important;    /* odstraní jakýkoli posun */
 }
+
+
+/* kontejner pavouků */
+#spiderList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* řádek pavouka jako odkaz */
+.spider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  border-bottom: 1px solid #ccc;
+  text-decoration: none; /* odstraní podtržení odkazu */
+  color: inherit;        /* text stejné barvy jako okolí */
+  transition: background 0.2s;
+}
+
+.spider:hover {
+  background: rgba(0,0,0,0.05); /* lehce šedý overlay, téměř neviditelný */
+}
+
+.spider .name {
+  flex: 2;
+}
+
+.spider .info {
+  flex: 1;
+  text-align: center;
+}
+
+.spider .price {
+  flex: 1;
+  text-align: right;
+}
+
+
+
+/* DETAIL STRÁNKY DRUHU */
+
+/* horní 3 sloupce */
+
+.speciesDetailTop{
+display:grid;
+grid-template-columns: 1.2fr 1fr 1fr;
+gap:40px;
+
+max-width:1200px;
+margin:50px auto;
+padding:0 20px;
+
+align-items:start;
+}
+
+
+/* levý sloupec */
+
+
+.speciesInfo h2{
+margin-bottom:15px;
+}
+
+
+/* prostřední blok */
+
+.characteristics{
+
+background:#151518;
+
+padding:25px;
+
+border-radius:14px;
+
+height:fit-content;
+
+box-shadow:0 8px 20px rgba(0,0,0,0.4);
+
+}
+
+.characteristics h3{
+margin-top:0;
+color:#9ec5ff;
+}
+
+
+/* obrázek */
+
+.speciesPhoto{
+
+width:100%;
+
+max-width:340px;
+
+border-radius:14px;
+
+box-shadow:0 15px 40px rgba(0,0,0,0.6);
+
+align-self:start;
+}
+
+
+
+/* spodní text */
+
+.speciesText{
+
+max-width:1000px;
+
+margin:40px auto;
+
+padding:0 20px;
+
+line-height:1.7;
+
+}
+
+.speciesText h3{
+
+margin-top:35px;
+
+color:#9ec5ff;
+
+}
+
+
+/* box textu */
+
+.care{
+
+background:#151518;
+
+padding:18px;
+
+border-radius:12px;
+
+border-left:4px solid #7fb2ff;
+
+margin-bottom:15px;
+
+}
+
+
+/* mobil */
+
+@media (max-width:900px){
+
+.speciesDetailTop{
+
+grid-template-columns:1fr;
+
+}
+
+.speciesPhoto{
+
+max-width:380px;
+
+}
+
+}
+
