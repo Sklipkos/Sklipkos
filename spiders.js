@@ -4,7 +4,7 @@ const spiders = [
 name:"Heteroscodra maculata",
 size:"samice • 3 cm",
 price:"700 Kč",
-image:"img/spiders/0.1 H. maculata 3cm.jpg",
+image:"img/spiders/heteroscodra-maculata.jpg",
 link:"species/heteroscodra-maculata.html"
 },
 
