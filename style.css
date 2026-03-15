@@ -673,39 +673,41 @@ opacity:1;
 
 
 
-/* nadpis/záhlaví s dvěma obrázky vedle sebe */
+/* záhlaví stránky */
 header {
   width: 100%;
   display: flex;
-  justify-content: center; /* centrování banneru horizontálně */
-  background: transparent; /* průhledné pozadí */
-  padding: 0; /* žádné vnitřní odsazení */
-  margin: 0;  /* odstraní případný margin nad a pod */
-}
-
-.speciesHeader {
-  display: flex;
-  flex-direction: row; /* obrázky vedle sebe */
-  align-items: center; /* vertikální zarovnání */
-  margin: 0;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
   padding: 0;
-  gap: 0; /* žádná mezera mezi obrázky */
+  margin: 0;
+  overflow:hidden;
 }
 
+/* wrapper nadpisu */
+.speciesHeader {
+  margin: 0;   /* odstraní mezeru h1 */
+  padding: 0;
+  line-height: 0; /* odstraní i malou mezeru pod obrázkem */
+}
+
+/* banner obrázek */
 .speciesHeader img {
-  height: auto;
-  width: auto;
   display: block;
-  object-fit: contain;
+width:100%;
+max-width:900px;
+margin-top:-70px;
+margin-bottom:-100px;
 }
 
-/* zmenšit levý obrázek */
-.speciesHeader img:first-child {
-  max-height: 320px;  /* menší než pravý obrázek */
-  max-width: 380px;   /* zachování proporcí */
+/* odstraní mezeru mezi bannerem a prvním obsahem */
+section:first-of-type {
+  margin-top: 0;
+  padding-top: 0;
 }
 
-.speciesHeader img:last-child {
-  max-height: 420px;
-  max-width: 500px;
+section:first-of-type h2 {
+  margin-top: 0;
 }
+

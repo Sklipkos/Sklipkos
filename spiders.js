@@ -10,15 +10,23 @@ const spiders = [
     name:"Pterinochilus murinus RCF",
     size:"samice • adult",
     price:"1000 Kč",
-    link:"species/pterinochilus-murinus.html"
+    link:"species/pterinochilus-murinus-rcf.html"
   },
   {
     name:"Lasiodora parahybana",
     size:"samec • 4 cm",
     price:"300 Kč",
     link:"species/lasiodora-parahybana.html"
+  },
+
+  {
+    name:"Psalmopoeus cambridgei",
+    size:"neurčené • 1.svlek",
+    price:"70 Kč",
+    link:"species/psalmopoeus-cambridgei.html"
   }
 ]
+
 
 const container = document.getElementById("spiderList");
 
