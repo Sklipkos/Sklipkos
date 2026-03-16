@@ -11,16 +11,58 @@ Rychlost
 ⚡⚡⚡⚡ velmi rychlý
 ⚡⚡⚡⚡⚡ extrémně rychlý
 
-
 Toxicita
 ☠️ slabý jed
 ☠️☠️ středně silný jed
 ☠️☠️☠️ silný jed
 
-
-
 Temperament
 🕷️ klidný
 🕷️🕷️ spíše klidný
 🕷️🕷️🕷️ defenzivní
-🕷️🕷️🕷️🕷️ velmi obranný
+🕷️🕷️🕷️🕷️ silně defenzivní
+
+Typ života
+🌳 arboreální (stromový)
+🕳️ terestriální (pozemní)
+⛏️ fosoriální(hrabavý)
+
+Tvorba pavučin
+🕸️ slabá
+🕸️🕸️ střední
+🕸️🕸️🕸️ silná
+🕸️🕸️🕸️🕸️ velmi silná
+
+Viditelnost
+👀 často viditelný
+👀👀 občas viditelný
+👀👀👀 většinou skrytý
+
+Tempo růstu
+🐌 pomalý růst
+🐇 střední růst
+🐆 rychlý růst
+
+Typ kokonu
+⚪ kulovitý kokon
+🕸️ plochý kokon (v pavučině)
+
+
+Tibiální háky (samec)
+✔️ přítomné tibiálky
+❌ chybí tibiálky
+
+
+
+<section class="species">
+  <h2>Druhy které chováme</h2>
+  <div class="speciesGrid">
+    <div>Poecilotheria</div>
+    <div>Brachypelma</div>
+    <div>Cyriopagopus</div>
+    <div>Psalmopoeus</div>
+    <div>Lasiodora</div>
+    <div>Harpactira</div>
+    <div>Pterinochilus</div>
+  </div>
+</section>
