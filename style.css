@@ -722,7 +722,8 @@ section:first-of-type h2 {
   .pageLayout {
     grid-template-columns: 1fr;
   }
-    .contactGrid {
+
+  .contactGrid {
     grid-template-columns: 1fr;
   }
 
@@ -734,20 +735,20 @@ section:first-of-type h2 {
     display: flex;
   }
 
- .spider {
-  grid-template-columns: 1fr;
-  gap: 4px;
-}
+  .spider {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
 
-.spider .info {
-  text-align: left;
-  transform: translateX(0);
-}
+  .spider .info {
+    text-align: left;
+    transform: translateX(0);
+  }
 
-.spider .price {
-  text-align: left;
-  font-size: 18px;
-}
+  .spider .price {
+    text-align: left;
+    font-size: 18px;
+  }
 
   .speciesDetailTop {
     grid-template-columns: 1fr;
@@ -781,24 +782,6 @@ section:first-of-type h2 {
   .speciesRowWide {
     grid-template-columns: 1fr;
     align-items: start;
-  }
-
-  .speciesContinent {
-    text-align: left;
-  }
-
-  .speciesRowWide .speciesGenus {
-    text-align: left;
-  }
-
-  .speciesInfoBadge {
-    width: 20px;
-    height: 20px;
-    font-size: 12px;
-  }
-
-  .speciesRowWide {
-    grid-template-columns: 1fr;
     gap: 6px;
   }
 
@@ -807,31 +790,34 @@ section:first-of-type h2 {
     font-weight: 600;
   }
 
+  .speciesName {
+    color: #ffffff;
+  }
+
   .speciesContinent {
     font-size: 14px;
     color: #8e97a1;
     text-align: left;
+    display: inline;
   }
 
   .speciesRowWide .speciesGenus {
     font-size: 14px;
     color: #8e97a1;
     text-align: left;
+    display: inline;
   }
 
-  /* spojení kontinent + rod do jednoho řádku */
   .speciesContinent::after {
     content: " • ";
     margin: 0 4px;
     color: #666;
   }
 
-  .speciesRowWide .speciesGenus {
-    display: inline;
-  }
-
-  .speciesName {
-  color: #ffffff;
+  .speciesInfoBadge {
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
   }
 }
 
