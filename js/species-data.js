@@ -440,7 +440,7 @@ const speciesData = [
   {
     continent: "Asie",
     genus: "Chilobrachys",
-    species: "Chilobrachys sp. Vietnam Blue (Tien)"
+    species: "Chilobrachys sp. Vietnam Blue"
   },
   {
     continent: "Asie",
