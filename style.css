@@ -819,8 +819,8 @@ section:first-of-type h2 {
   }
 
   .genusSpeciesSection {
-    margin: 18px auto 0;
-    padding: 18px;
+    margin: 18px 14px 0;
+    padding: 16px;
     border-radius: 16px;
   }
 
@@ -830,32 +830,38 @@ section:first-of-type h2 {
     line-height: 1.25;
   }
 
+  .genusSpeciesSection .speciesList {
+    gap: 10px;
+  }
+
   .genusSpeciesSection .speciesRow {
     padding: 14px 16px;
     border-radius: 16px;
   }
 
+  .genusSpeciesSection .speciesNameWrap,
   .genusSpeciesSection .speciesName {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.35;
   }
 
   .genusDetailTop {
     grid-template-columns: 1fr !important;
     gap: 16px;
-    margin: 22px auto 28px;
+    max-width: 100%;
+    margin: 22px auto 26px;
     padding: 0 14px;
   }
 
   .genusDetailTop .speciesInfo {
-    padding: 20px 18px;
+    padding: 18px 16px;
     border-radius: 16px;
     font-size: 15px;
     line-height: 1.65;
   }
 
   .genusDetailTop .speciesInfo h2 {
-    margin-bottom: 12px;
+    margin: 0 0 12px;
     font-size: 22px;
     line-height: 1.2;
   }
@@ -865,19 +871,19 @@ section:first-of-type h2 {
   }
 
   .genusText {
-    margin: 24px auto 0;
-    padding: 0 14px;
+    margin: 0 auto;
+    padding: 0 14px 24px;
   }
 
   .genusText h3 {
-    margin-top: 28px;
+    margin-top: 26px;
     margin-bottom: 12px;
     font-size: 22px;
     line-height: 1.2;
   }
 
   .genusText .care {
-    padding: 16px 16px;
+    padding: 16px 15px;
     border-radius: 14px;
     margin-bottom: 12px;
     font-size: 15px;
@@ -886,7 +892,11 @@ section:first-of-type h2 {
 
   .genusText a {
     display: inline-block;
-    margin-top: 10px;
+    margin-top: 8px;
+  }
+
+  .generaHeader {
+    margin-bottom: 18px;
   }
 
 }
